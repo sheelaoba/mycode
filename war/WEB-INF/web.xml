@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	
+	
+	<servlet>
+		<servlet-name>Addforumservlet</servlet-name>
+		<servlet-class>myproject.Addforumservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Addforumservlet</servlet-name>
+		<url-pattern>/Addforumservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>openforumservlet</servlet-name>
+		<servlet-class>myproject.openforumservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>openforumservlet</servlet-name>
+		<url-pattern>/openforumservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>replyservlet</servlet-name>
+		<servlet-class>myproject.replyservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>replyservlet</servlet-name>
+		<url-pattern>/replyservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteservlet</servlet-name>
+		<servlet-class>myproject.deleteservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteservlet</servlet-name>
+		<url-pattern>/deleteservlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
